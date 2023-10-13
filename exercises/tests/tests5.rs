@@ -32,7 +32,12 @@ unsafe fn modify_by_address(address: usize) {
     // code's behavior and the contract of this function. You may use the
     // comment of the test below as your format reference.
     unsafe {
-        todo!("Your code goes here")
+    // SAFETY: Describe why this block of code is considered safe.
+    // You can use the comment from the test below as a format reference.
+    // Modify the memory at the specified `address`.
+    // Make sure that `address` contains a mutable reference to a valid `u32` value.
+    // If any invariants or guarantees are established by the function or its caller, mention them here.
+    address = 0xAABBCCDD;
     }
 }
 
